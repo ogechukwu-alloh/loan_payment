@@ -1,5 +1,3 @@
-import pandas as pd
-
 def periodic_payment(principal, annual_rate, num_of_years, compounding_frequency):
     num_of_payments = num_of_years * compounding_frequency
     rate_per_period = (annual_rate / 100.0) / compounding_frequency
@@ -32,7 +30,6 @@ def amortization_schedule(principal, annual_rate, num_of_years, compounding_freq
             "Principal": round(principal_payment, 2),
             "Balance": round(balance_to_pay, 2)
         })
-
     return schedule
 
 
